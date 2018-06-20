@@ -18,10 +18,10 @@ echo "<ca>" >> /tmp/$1.ovpn
 cat /etc/openvpn/ca.crt >> /tmp/$1.ovpn
 echo "</ca>" >> /tmp/$1.ovpn
 echo "<cert>" >> /tmp/$1.ovpn
-cat /etc/openvpn/issued/$1.crt >> /tmp/$1.ovpn
+cat /etc/openvpn/easy-rsa/pki/issued/$1.crt >> /tmp/$1.ovpn
 echo "</cert>" >> /tmp/$1.ovpn
 echo "<key>" >> /tmp/$1.ovpn
-cat /etc/openvpn/private/$1.key >> /tmp/$1.ovpn
+cat /etc/openvpn/easy-rsa/pki/private/$1.key >> /tmp/$1.ovpn
 echo "</key>" >> /tmp/$1.ovpn
 echo "<tls-auth>" >> /tmp/$1.ovpn
 cat /etc/openvpn/ta.key >> /tmp/$1.ovpn
