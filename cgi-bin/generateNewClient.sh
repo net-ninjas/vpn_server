@@ -13,7 +13,7 @@ cd /etc/openvpn/easy-rsa/
 
 
 # Generates the custom client.ovpn
-cp -f $DIR/client-common.txt /tmp/$1.ovpn
+cp -f $DIR/../client-common.txt /tmp/$1.ovpn
 echo "<ca>" >> /tmp/$1.ovpn
 cat /etc/openvpn/ca.crt >> /tmp/$1.ovpn
 echo "</ca>" >> /tmp/$1.ovpn
