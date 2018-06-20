@@ -5,7 +5,7 @@ tar xzf ~/easyrsa.tgz -C ~/
 rm -rf ~/easyrsa.tgz
 mv ~/EasyRSA-3.0.4/ /etc/openvpn/
 mkdir -p /etc/openvpn/easy-rsa/pki
-mv /etc/openvpn/EasyRSA-3.0.4/ /etc/openvpn/easy-rsa/ #TODO why 2 mv?
+mv /etc/openvpn/EasyRSA-3.0.4/* /etc/openvpn/easy-rsa/ #TODO why 2 mv?
 chown -R root:root /etc/openvpn/easy-rsa/
 
 cd /etc/openvpn/easy-rsa/EasyRSA-3.0.4
