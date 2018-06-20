@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR=$(dirname "$0")
+DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 cd $DIR
 
 sudo apt update
